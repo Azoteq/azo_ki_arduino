@@ -27,7 +27,7 @@ Target Hardware : RP2040
 ## Generic Commands
 | Value | Name | Description | Parameters |
 | - | - | - | - |
-| 0x00 | Device Setup   | Select device and matrix size | - |
+| 0x00 | Device Setup   | Select device and matrix size <br> 0 - IQS7220A <br> 1 - IQS7320A <br> 2 - IQS9320 I2C <br> 3 - IQS9320 Key Scan | 0 - Device Type <br> 1 - Number of Columns <br> 2 - Number of Rows |
 | 0x01 | Stop Streaming | Stop all streaming | - |
 | 0x02 | Stop Serial Comms | Stop all streaming | - |
 
