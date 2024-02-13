@@ -4,9 +4,6 @@ Developed for IQS7220A, IQS7320A, and IQS9320 products from Azoteq.
 
 Target Hardware : RP2040
 
-
-
-
 # Serial Frame Composition
 
 | Position  | Value |
@@ -27,7 +24,7 @@ Target Hardware : RP2040
 ## Generic Commands
 | Value | Name | Description | Parameters |
 | - | - | - | - |
-| 0x00 | Device Setup   | Select device and matrix size <br> 0 - IQS7220A <br> 1 - IQS7320A <br> 2 - IQS9320 I2C <br> 3 - IQS9320 Key Scan | 0 - Device Type <br> 1 - Number of Columns <br> 2 - Number of Rows |
+| 0x00 | Device Setup   | Select device and matrix size | - |
 | 0x01 | Stop Streaming | Stop all streaming | - |
 | 0x02 | Stop Serial Comms | Stop all streaming | - |
 
@@ -79,6 +76,4 @@ Target Hardware : RP2040
 | 0x46 | Stream Key Scan | Periodically return device and channel states | 0 - Sample Interval <br> 1 - Number of Channels |
 | 0x47 | Stream I2C Read Single Device | Periodically return I2C data | 0 - Sample Interval <br> 1 - Device Select <br> 2 - Device Address <br> 3 - Number of Registers <br> 4 - Register Address[] <br> 5 - Data Length[] |
 | 0x48 | Stream I2C Read Multiple Devices | Periodically return I2C data | 0 - Sample Interval <br> 1 - Device Address <br> 2 - Number of Registers <br> 3 - Register Address[] <br> 4 - Data Length[] |
-
-
 

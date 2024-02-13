@@ -12,7 +12,7 @@
  * @file        azo_ki.ino                                                    *
  * @brief       Main Arduino file for the Azoteq Keyboard Interface           *
  * @author      Hennie van der Westhuizen - Azoteq (Pty) Ltd                  *
- * @version     v0.0.1                                                        *
+ * @version     v0.0.2                                                        *
  * @date        2023                                                          *
  *****************************************************************************/
 #include "azo_ki.hpp"

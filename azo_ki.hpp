@@ -14,7 +14,7 @@
  *              Contains KeyboardInterface class declaration, global          *
  *              definitions, data structure declarations.                     *
  * @author      Hennie van der Westhuizen - Azoteq (Pty) Ltd                  *
- * @version     v0.0.1                                                        *
+ * @version     v0.0.2                                                        *
  * @date        2023                                                          *
  *****************************************************************************/
 #pragma once
@@ -97,8 +97,6 @@ namespace AZO_KEYBOARD_INTERFACE
         uint32_t i2c_clk;
         uint8_t pin_sda_0;
         uint8_t pin_scl_0;
-        uint8_t pin_sda_1;
-        uint8_t pin_scl_1;
         uint32_t *c0_msk;
         uint32_t *r0_msk;
         uint32_t *r1_msk;

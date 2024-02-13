@@ -13,7 +13,7 @@
  * @brief       Class constuctors, main application loop,                     *
  *              serial communication handling                                 *
  * @author      Hennie van der Westhuizen - Azoteq (Pty) Ltd                  *
- * @version     v0.0.1                                                        *
+ * @version     v0.0.2                                                        *
  * @date        2023                                                          *
  *****************************************************************************/
 #include "azo_ki.hpp"
@@ -528,9 +528,9 @@ namespace AZO_KEYBOARD_INTERFACE
                     for (uint8_t i = 0; i < number_devices; i++)
                     {
                         this->i2c_control.device_addr       = this->serial_packet_data[3+i];
-                        this->i2c_control.register_addr_lsb = this->serial_packet_data[4 + number_devices];
-                        this->i2c_control.register_addr_msb = this->serial_packet_data[5 + number_devices];
-                        this->i2c_control.data_len          = this->serial_packet_data[6 + number_devices];
+                        this->i2c_control.register_addr_lsb = this->serial_packet_data[3 + number_devices];
+                        this->i2c_control.register_addr_msb = this->serial_packet_data[4 + number_devices];
+                        this->i2c_control.data_len          = this->serial_packet_data[5 + number_devices];
                         this->iqs9320_i2c_read_fp();
                     }
                     break;
@@ -543,10 +543,10 @@ namespace AZO_KEYBOARD_INTERFACE
                     for (uint8_t i = 0; i < number_devices; i++)
                     {
                         this->i2c_control.device_addr       = this->serial_packet_data[3+i];
-                        this->i2c_control.register_addr_lsb = this->serial_packet_data[4 + number_devices];
-                        this->i2c_control.register_addr_msb = this->serial_packet_data[5 + number_devices];
-                        this->i2c_control.data_len          = this->serial_packet_data[6 + number_devices];
-                        memcpy(this->i2c_control.output_data, &(this->serial_packet_data[7 + number_devices]), this->i2c_control.data_len);
+                        this->i2c_control.register_addr_lsb = this->serial_packet_data[3 + number_devices];
+                        this->i2c_control.register_addr_msb = this->serial_packet_data[4 + number_devices];
+                        this->i2c_control.data_len          = this->serial_packet_data[5 + number_devices];
+                        memcpy(this->i2c_control.output_data, &(this->serial_packet_data[6 + number_devices]), this->i2c_control.data_len);
                         this->iqs9320_i2c_write_fp();
                     }
                     Serial.write(return_arr, 4);

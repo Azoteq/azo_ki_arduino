@@ -12,7 +12,7 @@
  * @file        azo_ki_serial.cpp                                             *
  * @brief       Handling of Rx serial communication                           *
  * @author      Hennie van der Westhuizen - Azoteq (Pty) Ltd                  *
- * @version     v0.0.1                                                        *
+ * @version     v0.0.2                                                        *
  * @date        2023                                                          *
  *****************************************************************************/
 #include "azo_ki.hpp"
